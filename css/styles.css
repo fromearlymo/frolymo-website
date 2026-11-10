@@ -27,3 +27,5 @@ body{font-weight:500}.hero-description,.brand-story p,.service-row p,.section-he
 .preview-pill{font-size:14px;font-weight:500;color:#eee9f8}
 .hero-visual figcaption{font-size:14px;color:#bac2d9;font-weight:500}
 @media(max-width:760px){.header-inner{gap:12px}.brand{gap:10px}.record-preview{max-width:100%;padding:23px 20px 16px}.preview-month{font-size:16px}.hero-visual figcaption{font-size:14px}.brand-caption{font-size:14px;letter-spacing:0}.preview-record{gap:8px}.record-date{padding:7px 5px}}
+
+@media(max-width:760px){.hero-actions{gap:16px;flex-wrap:wrap}.hero-actions .button{white-space:nowrap;padding-inline:18px;min-height:50px;font-size:14px;gap:14px}.hero-actions .quiet-link{white-space:nowrap}}
