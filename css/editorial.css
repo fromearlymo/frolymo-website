@@ -73,6 +73,7 @@
 .mag-contact h2{font-size:clamp(24px,2.7vw,35px);font-weight:750;letter-spacing:-.045em;line-height:1.5}
 .mag-contact-detail p{font-size:15px;color:#5b5368;margin-bottom:11px}
 .editorial-page .mag-contact-detail .text-link{font-size:clamp(17px,2vw,24px);font-weight:650;color:var(--navy);border-bottom:1px solid #8c77b4;padding-bottom:5px;overflow-wrap:anywhere}
+.editorial-page .mag-service-intro > .text-link{font-weight:700;color:#5c427b}
 .mag-footer{background:var(--navy);color:var(--paper);padding-block:25px}
 .mag-footer-inner{display:flex;align-items:center;gap:30px;font-size:14px;font-weight:550}
 .mag-footer-brand{font-size:32px;font-weight:900;letter-spacing:-.045em;line-height:1.1}
