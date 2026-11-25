@@ -1,4 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" version="1.1" width="161" height="161" viewBox="0 0 161 161"><rect width="161" height="161" fill="#fff"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 180">
+  <rect width="180" height="180" fill="#fff"/>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" version="1.1" x="16" y="54" width="148" height="72" viewBox="15 34 131 63">
 <defs>
 <clipPath id="clip_1">
 <path transform="matrix(1,0,0,-1,0,161)" d="M0 161H161V0H0Z"/>
@@ -26,4 +28,5 @@
 <path transform="matrix(1,0,0,-1,55.4968,45.177003)" d="M0 0 2.732-.715C2.824-.739 2.896-.811 2.921-.904L3.636-3.636C3.673-3.777 3.817-3.861 3.959-3.825 4.051-3.8 4.123-3.728 4.147-3.636L4.862-.904C4.886-.811 4.959-.739 5.051-.715L7.783 0C7.924 .037 8.008 .181 7.972 .323 7.948 .415 7.875 .487 7.783 .512L5.051 1.227C4.959 1.251 4.886 1.323 4.862 1.415L4.147 4.147C4.11 4.288 3.966 4.373 3.824 4.336 3.732 4.312 3.66 4.24 3.636 4.147L2.921 1.415C2.896 1.323 2.824 1.251 2.732 1.227L0 .512C-.141 .474-.226 .33-.189 .189-.165 .096-.092 .024 0 0" fill="#002748"/>
 </g>
 </g>
+</svg>
 </svg>
