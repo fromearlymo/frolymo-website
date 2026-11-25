@@ -23,6 +23,22 @@
   document.addEventListener('click', event => {
     if (!menu?.contains(event.target) && !menuButton?.contains(event.target)) closeMenu();
   });
+  const preview = document.querySelector('#app-preview');
+  const previewOptions = preview?.querySelector('.mag-preview-options');
+  const previewLink = preview?.querySelector('.mag-preview-enlarge');
+  const previewImage = previewLink?.querySelector('img');
+  if (previewOptions && previewImage) {
+    const buttons = previewOptions.querySelectorAll('button');
+    buttons.forEach(button => button.addEventListener('click', () => {
+      const { previewSrc, previewAlt } = button.dataset;
+      previewImage.alt = previewAlt;
+      previewImage.src = previewSrc;
+      previewLink.href = previewSrc;
+      previewLink.setAttribute('aria-label', `${previewAlt} 크게 보기`);
+      buttons.forEach(option => option.setAttribute('aria-pressed', String(option === button)));
+    }));
+    previewOptions.hidden = false;
+  }
   const safeUrl = (value, domains) => {
     try {
       const url = new URL(value);
