@@ -169,3 +169,11 @@
 }
 @media(max-width:360px){.mag-hero-copy{padding-inline:23px}.mag-hero-korean{font-size:21px}.mag-hero-english{font-size:18vw}.mag-brand-description br{display:none}.mag-note-category{display:none}.mag-contact-detail p{font-size:13px}}
 @media(prefers-reduced-motion:reduce){.mag-button{transition:none}}
+
+.mag-tour{margin-top:24px}
+.mag-tour p{font-size:17px;font-weight:650;color:#efedf4}
+.mag-tour ol{display:flex;align-items:center;flex-wrap:wrap;gap:0 12px;padding:0;margin:4px 0 0;list-style:none}
+.mag-tour li{display:flex;align-items:center;gap:12px}
+.mag-tour li+li::before{content:"";width:5px;height:5px;border-top:1px solid var(--warm-gold);border-right:1px solid var(--warm-gold);transform:rotate(45deg)}
+.mag-tour a{display:inline-flex;align-items:center;min-height:48px;font-size:16px;font-weight:650;color:var(--warm-gold);text-decoration:underline;text-underline-offset:5px}
+@media(max-width:380px){.mag-tour ol,.mag-tour li{column-gap:6px}}
