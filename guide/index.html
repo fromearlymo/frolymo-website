@@ -5,13 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#f3f0e9">
   <title>프롤리모 공수 앱 사용 안내 | FROLYMO</title>
-  <meta name="description" content="건설현장 공수 기록, 예상 수입, 벽돌 달력, 현장 날씨를 화면으로 살펴보세요. 현장 동료를 위한 프롤리모 사용 안내예요.">
+  <meta name="description" content="회원가입과 현장 등록부터 공수 기록, 벽돌 달력, 안전 문자함, 현장 이야기까지 개발 중인 앱 화면으로 살펴보세요.">
   <link rel="canonical" href="https://frolymo.com/guide/">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="ko_KR">
   <meta property="og:site_name" content="FROLYMO">
   <meta property="og:title" content="프롤리모 공수 앱 사용 안내 | FROLYMO">
-  <meta property="og:description" content="건설현장 공수 기록, 예상 수입, 벽돌 달력, 현장 날씨를 화면으로 살펴보세요. 현장 동료를 위한 프롤리모 사용 안내예요.">
+  <meta property="og:description" content="회원가입과 현장 등록부터 공수 기록, 벽돌 달력, 안전 문자함, 현장 이야기까지 개발 중인 앱 화면으로 살펴보세요.">
   <meta property="og:url" content="https://frolymo.com/guide/">
   <meta property="og:image" content="https://frolymo.com/assets/brand/social-preview.png">
   <meta property="og:image:width" content="1200">
@@ -33,7 +33,7 @@
     <a class="mag-masthead" href="../" aria-label="FROLYMO 프롤리모 현장라이프 홈"><span>FROLYMO</span><i aria-hidden="true"></i></a>
     <div class="mag-nav-row">
       <button class="mag-menu-toggle" data-menu-toggle aria-label="메뉴 열기 및 닫기" aria-controls="primary-navigation" aria-expanded="false" type="button"><span>메뉴</span><i aria-hidden="true"></i></button>
-      <nav id="primary-navigation" class="mag-navigation" aria-label="주 메뉴"><a href="../#brand">브랜드</a><a href="../#service">앱 소개</a><a href="./" aria-current="page">사용 안내</a><a href="../#field-notes">현장의 이야기</a><a href="../#contact">문의</a></nav>
+      <nav id="primary-navigation" class="mag-navigation" aria-label="주 메뉴"><a href="../#brand">브랜드</a><a href="../#service">앱 소개</a><a href="./" aria-current="page">사용 안내</a><a href="../#field-notes">현장 이야기</a><a href="../#contact">문의</a></nav>
       <p class="mag-issue" lang="en">FIELD LIFE / 01</p>
     </div>
   </header>
@@ -55,6 +55,7 @@
       <h2 id="contents-title">목차</h2>
       <ul>
         <li><a href="#getting-started">시작하기</a></li>
+        <li><a href="#backup">기록 백업과 복원</a></li>
         <li><a href="#work-log">공수 기록하기</a></li>
         <li><a href="#estimated-pay">일당과 예상 수입</a></li>
         <li><a href="#brick-calendar">벽돌 달력</a></li>
@@ -63,6 +64,8 @@
         <li><a href="#hide-amount">금액 숨기기</a></li>
         <li><a href="#weather">현장 날씨</a></li>
         <li><a href="#team">팀 관리와 정산</a></li>
+        <li><a href="#safety-inbox">안전 문자함과 위젯</a></li>
+        <li><a href="#field-stories">현장 이야기</a></li>
         <li><a href="#field-life">현장 생활 기능</a></li>
       </ul>
     </nav>
@@ -70,8 +73,8 @@
       <section id="getting-started" class="guide-section">
         <div>
           <h2>시작하기</h2>
-          <p>프롤리모 공수 앱을 열면 오늘의 공수와 이번 달 기록을 확인할 수 있어요.</p>
-          <p>체험 모드에서는 공수 기록을 현재 기기에 저장해요. 앱을 삭제하거나 휴대전화를 바꾸면 기록이 사라질 수 있어요.</p>
+          <p>회원가입 또는 로그인한 뒤 나의 현장을 등록해 주세요. 홈에서 ‘오늘 공수 기록하기’를 눌러 일한 날짜와 공수를 저장해요.</p>
+          <p class="guide-note">아래 이미지는 기능을 설명하기 위해 개발 중에 촬영한 화면이에요. 실제 출시 화면은 달라질 수 있어요.</p>
         </div>
         <div class="guide-media">
           <figure class="guide-preview">
@@ -83,28 +86,29 @@
             <figcaption>기록과 금액은 화면 예시이며, 실제 출시 화면은 달라질 수 있어요.</figcaption>
           </figure>
           <details>
-            <summary>앱 첫 실행</summary>
+            <summary>앱을 시작하면 보이는 화면</summary>
             <figure class="guide-preview">
-              <div class="mag-phone-frame">
-                <a href="../assets/guide/guide-00-launch.webp" aria-label="프롤리모 로고가 표시된 앱 첫 실행 화면 크게 보기">
-                  <img src="../assets/guide/guide-00-launch.webp" width="840" height="1860" alt="프롤리모 로고가 표시된 앱 첫 실행 화면" loading="lazy" decoding="async">
-                </a>
-              </div>
-              <figcaption>앱 첫 실행 화면이에요.</figcaption>
+              <div class="mag-phone-frame"><a href="../assets/guide/guide-00-launch.webp" aria-label="프롤리모 로고가 표시된 첫 화면 크게 보기"><img src="../assets/guide/guide-00-launch.webp" width="840" height="1860" alt="프롤리모 로고가 표시된 첫 화면" loading="lazy" decoding="async"></a></div>
+              <figcaption>앱을 열면 보이는 로고예요.</figcaption>
             </figure>
-          </details>
-          <details>
-            <summary>로그인과 체험 모드</summary>
             <figure class="guide-preview">
-              <div class="mag-phone-frame">
-                <a href="../assets/guide/guide-02-start.webp" aria-label="프롤리모 로그인 화면 하단의 먼저 체험하기 버튼 크게 보기">
-                  <img src="../assets/guide/guide-02-start.webp" width="840" height="1860" alt="프롤리모 로그인 화면 하단의 먼저 체험하기 버튼" loading="lazy" decoding="async">
-                </a>
-              </div>
-              <figcaption>로그인 및 체험 모드 시작 화면이에요.</figcaption>
+              <div class="mag-phone-frame"><a href="../assets/guide/guide-02-start.webp" aria-label="로그인 방법을 고르는 앱 시작 화면 크게 보기"><img src="../assets/guide/guide-02-start.webp" width="840" height="1860" alt="로그인 방법을 고르는 앱 시작 화면" loading="lazy" decoding="async"></a></div>
+              <figcaption>사용할 계정으로 시작해 주세요.</figcaption>
+            </figure>
+            <figure class="guide-preview">
+              <div class="mag-phone-frame"><a href="../assets/guide/guide-32-onboarding.webp" aria-label="‘함께 해보기’와 ‘전체 건너뛰기’를 선택할 수 있는 사용 가이드 크게 보기"><img src="../assets/guide/guide-32-onboarding.webp" width="840" height="1860" alt="‘함께 해보기’와 ‘전체 건너뛰기’를 선택할 수 있는 사용 가이드" loading="lazy" decoding="async"></a></div>
+              <figcaption>로그인 후 사용 가이드에서 주요 기능을 하나씩 눌러 보세요.</figcaption>
             </figure>
           </details>
         </div>
+      </section>
+      <section id="backup" class="guide-section">
+        <div>
+          <h2>기록 백업과 복원</h2>
+          <p>공수와 현장 기록은 로그인한 계정에 동기화돼요. 휴대전화를 바꿀 때는 이전 기기의 설정에서 ‘데이터 백업 및 동기화’를 열고 서버에 저장됐는지 먼저 확인해 주세요.</p>
+          <p>새 기기에서 같은 계정으로 로그인하면 동기화된 기록과 예상 수입을 확인해요. 별도로 저장한 백업이 있다면 같은 메뉴의 ‘백업 데이터 복원하기’로 빠진 기록을 가져올 수 있어요.</p>
+        </div>
+        <p class="guide-placeholder">화면 준비 중</p>
       </section>
       <section id="work-log" class="guide-section">
         <div>
@@ -137,8 +141,8 @@
       <section id="estimated-pay" class="guide-section">
         <div>
           <h2>일당과 예상 수입</h2>
-          <p>현장에 단가를 설정하면 저장한 공수와 단가를 바탕으로 예상 수입을 확인할 수 있어요. ‘세후로 보기’로 공제액을 반영한 예상 금액을 볼 수 있어요.</p>
-          <p class="guide-note">입력하신 공수와 단가로 계산한 예상 금액이에요. 실제 지급액과 다를 수 있어요.</p>
+          <p>현장별 일당을 입력하면 기록한 공수에 맞춰 예상 수입이 쌓여요. 공제 후 금액이 궁금하면 ‘세후로 보기’를 눌러 주세요.</p>
+          <p class="guide-note">급여명세서와 비교할 때는 별도로 받은 수당이나 공제 항목도 함께 살펴보세요.</p>
         </div>
         <div class="guide-media">
           <figure class="guide-preview">
@@ -160,17 +164,21 @@
               <figcaption>기록과 금액은 화면 예시이며, 실제 출시 화면은 달라질 수 있어요.</figcaption>
             </figure>
           </details>
+          <details><summary>개인 급여 정산서</summary><figure class="guide-preview">
+            <div class="mag-phone-frame"><a href="../assets/guide/guide-31-payroll.webp" aria-label="개인 급여 정산서 예시 크게 보기"><img src="../assets/guide/guide-31-payroll.webp" width="840" height="1860" alt="급여 정산서와 일자별 공수 상세 내역서, PDF·Excel 출력 형식을 고르는 화면" loading="lazy" decoding="async"></a></div>
+            <figcaption>개인 정산 자료의 문서 종류와 출력 방법을 선택하는 화면이에요.</figcaption>
+          </figure></details>
         </div>
       </section>
       <section id="brick-calendar" class="guide-section">
         <div>
           <h2>벽돌 달력</h2>
-          <p>공수의 크기에 따라 벽돌 색이 달라져요. 벽돌을 눌러 해당 날짜에 남긴 기록을 확인해 주세요. 아래 예시는 금요일은 모두 일하고, 토요일은 격주로 일하고, 일요일은 쉬는 달이에요.</p>
+          <p>공수의 크기에 따라 벽돌 색이 달라져요. 벽돌을 눌러 해당 날짜에 남긴 기록을 확인해 주세요. 아래 10월 예시에서는 11일 동안 쌓은 13.0공수를 볼 수 있어요.</p>
         </div>
         <figure class="guide-preview">
           <div class="mag-phone-frame">
-            <a href="../assets/guide/guide-07-calendar-october.png" aria-label="선택한 달에 일한 날과 공수 크기를 벽돌 색으로 보여 주는 달력 크게 보기">
-              <img src="../assets/guide/guide-07-calendar-october.png" width="840" height="1860" alt="선택한 달에 일한 날과 공수 크기를 벽돌 색으로 보여 주는 달력" loading="lazy" decoding="async">
+            <a href="../assets/guide/guide-07-calendar.webp" aria-label="선택한 달에 일한 날과 공수 크기를 벽돌 색으로 보여 주는 달력 크게 보기">
+              <img src="../assets/guide/guide-07-calendar.webp" width="840" height="1860" alt="선택한 달에 일한 날과 공수 크기를 벽돌 색으로 보여 주는 달력" loading="lazy" decoding="async">
             </a>
           </div>
           <figcaption>기록과 금액은 화면 예시이며, 실제 출시 화면은 달라질 수 있어요.</figcaption>
@@ -185,16 +193,16 @@
         <div class="guide-statistics-gallery">
           <figure class="guide-preview">
             <div class="mag-phone-frame">
-              <a href="../assets/guide/guide-09-yearly-example.png" aria-label="연도별 보기에서 한 해의 공수 합계와 월별 벽돌을 확인하는 화면 크게 보기">
-                <img src="../assets/guide/guide-09-yearly-example.png" width="840" height="1860" alt="연도별 보기에서 한 해의 공수 합계와 월별 벽돌을 확인하는 화면" loading="lazy" decoding="async">
+              <a href="../assets/guide/guide-09-yearly.webp" aria-label="연도별 보기에서 한 해의 공수 합계와 월별 벽돌을 확인하는 화면 크게 보기">
+                <img src="../assets/guide/guide-09-yearly.webp" width="840" height="1860" alt="연도별 보기에서 한 해의 공수 합계와 월별 벽돌을 확인하는 화면" loading="lazy" decoding="async">
               </a>
             </div>
             <figcaption>연도별 예시</figcaption>
           </figure>
           <figure class="guide-preview">
             <div class="mag-phone-frame">
-              <a href="../assets/guide/guide-08-monthly-october.png" aria-label="월별 보기에서 월 선택과 이번 달 공수 합계·기록 금액을 확인하는 화면 크게 보기">
-                <img src="../assets/guide/guide-08-monthly-october.png" width="840" height="1860" alt="월별 보기에서 월 선택과 이번 달 공수 합계·기록 금액을 확인하는 화면" loading="lazy" decoding="async">
+              <a href="../assets/guide/guide-08-monthly.webp" aria-label="월별 보기에서 월 선택과 이번 달 공수 합계·기록 금액을 확인하는 화면 크게 보기">
+                <img src="../assets/guide/guide-08-monthly.webp" width="840" height="1860" alt="월별 보기에서 월 선택과 이번 달 공수 합계·기록 금액을 확인하는 화면" loading="lazy" decoding="async">
               </a>
             </div>
             <figcaption>월별 예시</figcaption>
@@ -260,17 +268,50 @@
       <section id="team" class="guide-section">
         <div>
           <p class="mag-development-label">준비 중</p>
-          <h2>팀 관리와 정산</h2>
-          <p>팀원 공수 기록을 모아서 월별 정산 내역을 확인하는 팀장 공수 관리 기능을 준비하고 있어요.</p>
+          <h2>팀 공수 장부</h2>
+          <p>설정의 ‘팀 공수 장부’에서 팀을 만들고 동료를 초대하는 기능을 개발 중이에요. 팀장·반장이 그날의 기본 공수를 적용하고, 연장·야간·결근한 팀원만 고친 뒤 확인해 저장하는 방식이에요.</p>
+          <h3>팀 채팅과 작업 공지</h3>
+          <p>팀 채팅과 작업 공지는 향후 계획이에요. 개발 중인 장부는 팀원의 공수와 세전 예상액을 월별로 확인하는 데 초점을 두고 있어요.</p>
         </div>
-        <p class="guide-placeholder">화면 준비 중</p>
+        <div class="guide-media"><figure class="guide-preview">
+            <div class="mag-phone-frame"><a href="../assets/guide/guide-34-team.webp" aria-label="팀 공수 장부 개발 화면 크게 보기"><img src="../assets/guide/guide-34-team.webp" width="840" height="1860" alt="팀 공수 장부 개발 화면" loading="lazy" decoding="async"></a></div>
+            <figcaption>팀 공수 장부는 출시 준비 중이에요.</figcaption>
+          </figure><details><summary>팀 월별 정산</summary><figure class="guide-preview">
+            <div class="mag-phone-frame"><a href="../assets/guide/guide-35-team-month.webp" aria-label="팀 월별 정산 개발 화면 크게 보기"><img src="../assets/guide/guide-35-team-month.webp" width="840" height="1860" alt="팀 월별 정산 개발 화면" loading="lazy" decoding="async"></a></div>
+            <figcaption>예시 팀의 정산 화면이에요.</figcaption>
+          </figure></details></div>
+      </section>
+      <section id="safety-inbox" class="guide-section">
+        <div><h2>안전 문자함과 위젯</h2>
+          <p>소중한 사람에게 받은 편지를 안전 문자함에 간직해요. 받는 분이 발신자를 승인하면 정해 둔 아침 시간에 편지를 받을 수 있도록 준비하고 있어요.</p>
+          <p>‘알림 · 응원 · 위젯 설정’에서 홈 화면에 표시할 내용과 보낸 사람, 반려동물 사진을 골라요. 앱 안에서 위젯 구성을 미리 볼 수 있어요. 실제 기기의 예약 전달과 위젯 자동 갱신은 출시 환경에서 확인할 예정이에요.</p>
+        </div>
+        <div class="guide-media"><figure class="guide-preview">
+            <div class="mag-phone-frame"><a href="../assets/guide/guide-29-safety.webp" aria-label="안전 문자함의 응원 편지 화면 크게 보기"><img src="../assets/guide/guide-29-safety.webp" width="840" height="1860" alt="안전 문자함의 응원 편지 화면" loading="lazy" decoding="async"></a></div>
+            <figcaption>개발 중인 앱의 안전 문자함이에요.</figcaption>
+          </figure>
+          <details><summary>위젯 미리보기</summary><figure class="guide-preview">
+            <div class="mag-phone-frame"><a href="../assets/guide/guide-30-safety-widget.webp" aria-label="반려묘 사진을 넣은 큰 위젯의 앱 안 미리보기 크게 보기"><img src="../assets/guide/guide-30-safety-widget.webp" width="840" height="1860" alt="반려묘 사진을 넣은 큰 위젯의 앱 안 미리보기" loading="lazy" decoding="async"></a></div>
+            <figcaption>앱 안에서 확인하는 위젯 예시예요.</figcaption>
+          </figure></details>
+        </div>
+      </section>
+      <section id="field-stories" class="guide-section">
+        <div><h2>현장 이야기</h2>
+          <p>홈의 ‘현장 이야기’에서 대표 칼럼을 열거나 ‘전체 보기’로 다른 글을 골라요. 본문을 내리면 위쪽 막대가 읽은 만큼 차요.</p>
+          <p>운영자가 발행한 공식 칼럼에 좋아요를 누르거나 스크랩해 두세요. 공유 메뉴에서 동료에게 보낼 링크를 복사할 수 있어요. 공개 콘텐츠와 공유 서비스는 정식 출시를 준비 중이에요.</p>
+        </div>
+        <div class="guide-media"><figure class="guide-preview">
+            <div class="mag-phone-frame"><a href="../assets/guide/guide-28-magazine.webp" aria-label="AI의 현장 사진 정리와 숙련공의 판단을 다룬 공식 칼럼 화면 크게 보기"><img src="../assets/guide/guide-28-magazine.webp" width="840" height="1860" alt="AI의 현장 사진 정리와 숙련공의 판단을 다룬 공식 칼럼 화면" loading="lazy" decoding="async"></a></div>
+            <figcaption>개발 중인 앱에서 촬영한 칼럼이에요.</figcaption>
+          </figure></div>
       </section>
       <section id="field-life" class="guide-section">
         <div>
           <h2>현장 생활 기능</h2>
           <p>현장 마라토너, 현장터, 건설현장 일자리 화면은 개발 중인 앱에 있어요. 기기 연동과 온라인 이용 방법은 출시 환경을 확인한 뒤 안내할게요.</p>
           <h3>준비 중인 기능</h3>
-          <p>오늘도 무사히와 가족 응원, 스마트 TBM, 안전교육과 현장 소식, 쇼핑과 선물하기는 이용 방법이 정해지면 안내할게요.</p>
+          <p>스마트 TBM, 안전교육, 쇼핑과 선물하기는 이용 방법과 제공 시기가 정해지면 안내할게요.</p>
         </div>
         <div class="guide-media">
           <figure class="guide-preview">
@@ -285,11 +326,11 @@
             <summary>현장터</summary>
             <figure class="guide-preview">
               <div class="mag-phone-frame">
-                <a href="../assets/guide/guide-25-market.webp" aria-label="체험 모드 현장터에서 물품 글 쓰기와 카테고리·지역 필터를 확인하는 화면 크게 보기">
-                  <img src="../assets/guide/guide-25-market.webp" width="840" height="1860" alt="체험 모드 현장터에서 물품 글 쓰기와 카테고리·지역 필터를 확인하는 화면" loading="lazy" decoding="async">
+                <a href="../assets/guide/guide-25-market.webp" aria-label="현장터에서 물품 글 쓰기와 카테고리·지역 필터를 확인하는 예시 화면 크게 보기">
+                  <img src="../assets/guide/guide-25-market.webp" width="840" height="1860" alt="현장터에서 물품 글 쓰기와 카테고리·지역 필터를 확인하는 예시 화면" loading="lazy" decoding="async">
                 </a>
               </div>
-              <figcaption>체험 모드 화면이에요.</figcaption>
+              <figcaption>개발 중에 촬영한 현장터 예시 화면이에요.</figcaption>
             </figure>
           </details>
           <details>
@@ -300,29 +341,29 @@
                   <img src="../assets/guide/guide-26-market-register.webp" width="840" height="1860" alt="현장터 물품 글 쓰기에서 카테고리와 물품 상태, 제목, 가격, 지역을 입력하는 화면" loading="lazy" decoding="async">
                 </a>
               </div>
-              <figcaption>체험 모드의 물품 등록 화면이에요.</figcaption>
+              <figcaption>개발 중에 촬영한 물품 등록 예시 화면이에요.</figcaption>
             </figure>
           </details>
           <details>
             <summary>일자리</summary>
             <figure class="guide-preview">
               <div class="mag-phone-frame">
-                <a href="../assets/guide/guide-27-jobs.webp" aria-label="체험 모드 일자리에서 구인과 구직, 직종과 지역 조건을 선택하는 화면 크게 보기">
-                  <img src="../assets/guide/guide-27-jobs.webp" width="840" height="1860" alt="체험 모드 일자리에서 구인과 구직, 직종과 지역 조건을 선택하는 화면" loading="lazy" decoding="async">
+                <a href="../assets/guide/guide-27-jobs.webp" aria-label="일자리에서 구인과 구직, 직종과 지역 조건을 선택하는 예시 화면 크게 보기">
+                  <img src="../assets/guide/guide-27-jobs.webp" width="840" height="1860" alt="일자리에서 구인과 구직, 직종과 지역 조건을 선택하는 예시 화면" loading="lazy" decoding="async">
                 </a>
               </div>
-              <figcaption>체험 모드 화면이에요.</figcaption>
+              <figcaption>개발 중에 촬영한 일자리 예시 화면이에요.</figcaption>
             </figure>
           </details>
           <details>
             <summary>설정</summary>
             <figure class="guide-preview">
               <div class="mag-phone-frame">
-                <a href="../assets/guide/guide-33-settings.webp" aria-label="체험 모드 설정에서 예시 프로필과 나의 현장, 글자 크기 설정을 보는 화면 크게 보기">
-                  <img src="../assets/guide/guide-33-settings.webp" width="840" height="1860" alt="체험 모드 설정에서 예시 프로필과 나의 현장, 글자 크기 설정을 보는 화면" loading="lazy" decoding="async">
+                <a href="../assets/guide/guide-33-settings.webp" aria-label="설정에서 예시 프로필과 나의 현장, 글자 크기 설정을 보는 화면 크게 보기">
+                  <img src="../assets/guide/guide-33-settings.webp" width="840" height="1860" alt="설정에서 예시 프로필과 나의 현장, 글자 크기 설정을 보는 화면" loading="lazy" decoding="async">
                 </a>
               </div>
-              <figcaption>촬영용 체험 프로필이 표시된 화면이에요.</figcaption>
+              <figcaption>촬영용 예시 프로필이 표시된 화면이에요.</figcaption>
             </figure>
           </details>
         </div>

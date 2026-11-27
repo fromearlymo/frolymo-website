@@ -1,0 +1,13 @@
+.safety-form {max-width:42rem;margin-inline:auto}
+.safety-form [hidden] {display:none!important}
+.safety-form fieldset {border:0;min-width:0;margin:0;padding:0}
+.safety-form label {display:block;margin:1.1rem 0 .4rem;font-weight:700}
+.safety-form input,.safety-form select,.safety-form textarea,.safety-form button,.safety-form summary {font:inherit;min-height:48px}
+.safety-form input,.safety-form select,.safety-form textarea {width:100%;box-sizing:border-box;padding:.7rem;border:1px solid #787381;border-radius:.45rem;background:white;color:#201d2c}
+.safety-form button,.safety-form summary {cursor:pointer;padding:.6rem .9rem}
+.safety-form button {border:1px solid #6a5b78;border-radius:.45rem;background:transparent;color:inherit}
+.safety-form #submit {width:100%;background:#302742;color:white;font-weight:700}
+.safety-form .safety-actions,.safety-form #suggestions {display:flex;flex-wrap:wrap;gap:.5rem}
+.safety-form p,.safety-form details {margin:1rem 0}
+.safety-form #receipt-text {white-space:pre-wrap;overflow-wrap:anywhere}
+.safety-form :focus-visible {outline:3px solid #684787;outline-offset:2px}
