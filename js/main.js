@@ -79,6 +79,6 @@
     link.textContent = email || '공식 문의하기 ↗';
     target.replaceChildren(link);
     const notice = document.querySelector('[data-contact-notice]');
-    if (notice) notice.textContent = '서비스와 브랜드에 관한 문의를 보내 주세요.';
+    if (notice) notice.textContent = '현장에서 쓰며 불편했던 점이나 바라는 기능을 들려주세요. 다음 업데이트를 준비할 때 살펴볼게요.';
   }
 })();

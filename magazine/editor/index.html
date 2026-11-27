@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow,noarchive"><meta name="referrer" content="no-referrer">
+  <title>매거진 편집실 · FROLYMO</title><link rel="icon" href="../../assets/brand/favicon.svg">
+  <link rel="stylesheet" href="../../css/magazine.css">
+  <script src="../../js/config.js" defer></script><script src="../common.js" defer></script><script src="./editor.js" defer></script>
+  <script src="./operations.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">본문으로 바로가기</a>
+  <header class="mast"><div><a href="../../"><img src="../../assets/brand/frolymo-symbol.svg" alt=""> FROLYMO</a><span>매거진 편집실</span></div></header>
+  <main id="main" class="workspace"><h1>매거진 편집실</h1><p id="notice" role="status" aria-live="polite">운영자 권한을 확인하고 있습니다.</p>
+  <form id="desktop-login" class="panel" hidden>
+    <label>PC 연결 코드<input id="desktop-code" type="password" autocomplete="off" spellcheck="false" maxlength="28" required></label>
+    <p>앱에서 매거진 → 매거진 관리 → PC 연결 코드를 선택하세요.</p><button class="primary">편집실 연결</button>
+  </form>
+  <div id="app" hidden>
+    <nav class="sections" aria-label="운영자 메뉴">
+      <button data-tab="drafts">콘텐츠 목록</button><button data-tab="write">새 글 작성</button><button data-tab="stats">대시보드</button>
+      <button data-tab="comments">댓글</button><button data-tab="reports">신고</button><button data-tab="restrictions">이용 제한</button><button data-tab="settings">운영 설정</button>
+    </nav>
+    <section id="list-pane" class="panel" hidden>
+      <h2 id="list-title">콘텐츠 목록</h2>
+      <label id="filter-box">목록 필터<select id="filter"><option value="">전체</option><option value="featured">대표 콘텐츠</option><option value="candidates">검토 중인 뉴스 후보</option><optgroup label="게시 상태"><option value="draft">임시저장</option><option value="review">검토 중</option><option value="scheduled">예약 게시</option><option value="published">게시 완료</option><option value="private">비공개</option><option value="archived">보관</option></optgroup><optgroup label="유형"><option value="news">건설 뉴스·수집 후보</option><option value="column">칼럼</option><option value="brand">브랜드 소식</option><option value="product">제품 소식</option></optgroup></select></label>
+      <div id="rows"></div><button id="more" hidden>더 불러오기</button>
+    </section>
+    <section id="write-pane" class="panel" hidden>
+      <div class="heading-actions"><h2>글 편집</h2><button type="button" id="delete-article" hidden>글 삭제</button><button type="button" id="duplicate">복제하여 새 글 작성</button></div>
+      <form id="editor">
+        <div class="grid">
+          <label class="wide">제목<input id="title" maxlength="160"></label>
+          <label class="wide">부제목<input id="subtitle" maxlength="300"></label>
+          <label>유형<select id="type"><option value="column">칼럼</option><option value="news">뉴스</option><option value="brand">브랜드 이야기</option><option value="product">제품 소식</option></select></label>
+          <label>카테고리<select id="category"></select></label>
+          <label>작성자<input id="author"></label><label>작성일·원문 날짜<input id="sourceDate" type="date"></label>
+          <div id="cover-upload" class="wide"></div>
+          <label class="wide">대표 이미지 주소<input id="image" type="url" placeholder="https://"></label>
+        </div>
+        <h3>본문</h3><div id="blocks"></div><div class="actions">
+          <label>추가할 요소<select id="block-type"><option value="paragraph">문단</option><option value="heading">소제목</option><option value="bold">굵은 글</option><option value="bullet">글머리 기호</option><option value="number">번호 목록</option><option value="quote">인용문</option><option value="divider">구분선</option><option value="link">링크</option><option value="image">이미지</option><option value="table">표</option></select></label><button type="button" id="add-block">본문에 추가</button>
+        </div>
+        <div class="grid refs"><label>출처·언론사<input id="source"></label><label>원문 주소<input type="url" id="sourceUrl" placeholder="https://"></label></div>
+        <h3>참고 자료</h3><div id="sources"></div><button type="button" id="add-source">참고 자료 추가</button>
+        <div class="grid refs">
+          <label>태그 (쉼표로 구분)<input id="tags"></label><label>이용 권한·확인 근거<input id="rights"></label>
+          <label class="wide">정정 안내<textarea id="correction" rows="2"></textarea></label>
+          <label class="inline"><input id="featured" type="checkbox" aria-describedby="featured-help">대표 콘텐츠로 표시</label>
+          <small class="wide" id="featured-help">게시하면 이 글이 홈의 대표 콘텐츠가 되고 이전 대표 글은 일반 글로 바뀝니다. 대표 콘텐츠가 없으면 최신 공개 글이 표시됩니다.</small>
+        </div>
+        <div class="actions publication"><label>게시 상태<select id="status"><option value="draft">작성 중</option><option value="review">검토 중</option><option value="scheduled">예약 게시</option><option value="published">게시 완료</option><option value="private">비공개</option><option value="archived">보관</option></select></label>
+          <label id="schedule-box" hidden>예약 시각 (기기 현지 시간)<input id="publish-at" type="datetime-local"></label>
+          <button type="button" id="preview-button">미리보기</button><button class="primary" id="save">선택한 상태로 저장</button>
+        </div>
+        <p id="save-status" role="status"></p><button type="button" id="reload" hidden>서버의 최신 버전 열기</button>
+      </form><details><summary>수정 이력</summary><ul id="history"></ul></details>
+    </section>
+    <section class="panel" id="stats-pane" hidden><h2>대시보드</h2><div id="stats"></div></section>
+    <section class="panel" id="settings-pane" hidden><h2>운영 설정</h2>
+      <form id="ops-settings"><label class="inline"><input type="checkbox" id="rss">뉴스 후보 수집</label><label>수집 빈도<select id="frequency"><option value="1">하루 한 번</option><option value="2">하루 두 번</option></select></label>
+        <label class="inline"><input type="checkbox" id="comments-enabled">댓글 작성 허용</label><p class="muted">신고 접수와 운영자 처리 절차를 점검한 뒤 댓글을 열어 주세요.</p><button>운영 설정 저장</button></form>
+      <h3>카테고리</h3><form id="category-form"><div id="category-list"></div><div class="actions"><button type="button" id="add-category">카테고리 추가</button><button>카테고리 저장</button></div></form>
+    </section>
+  </div>
+  <dialog id="preview"><button id="close-preview">미리보기 닫기</button><article class="reading"></article></dialog>
+  <dialog id="moderation"><form id="moderation-form"><h2>운영 조치</h2><label>처리할 조치<select id="operation"></select></label><label>처리 사유<textarea id="reason" required maxlength="400"></textarea></label><label id="days-box" hidden>제한 일수<input id="days" type="number" min="1" max="365" value="7"></label><div class="actions"><button class="primary">처리하기</button><button type="button" id="cancel-moderation">취소</button></div><p role="status" id="moderation-status"></p></form></dialog>
+  <noscript>편집실을 사용하려면 자바스크립트를 켜 주세요.</noscript></main>
+</body>
+</html>

@@ -1,4 +1,6 @@
 window.FROLYMO_CONFIG = {
+  "safetyApiUrl": "",
+  "magazineApiUrl": "",
   "siteUrl": "https://frolymo.com",
   "contact": {
     "email": "frolymo2016@gmail.com",
@@ -9,5 +11,5 @@ window.FROLYMO_CONFIG = {
     "androidUrl": "",
     "iosUrl": ""
   },
-  "googleSiteVerification": ""
+  "googleSiteVerification": "z9HrR0KNAIvHe7jSPkp-lPeW0XLSJh-FsrbWZiaZsLI"
 };
